@@ -13,6 +13,8 @@ abstract class Animal{
 }
 
 
+
+
 class Dog extends Animal{
   String color;
   var test="This is Dog class";
@@ -22,8 +24,6 @@ class Dog extends Animal{
   speak() {
     print("$name speaking Ghew Ghew");
   }
-
-
 
 }
 
@@ -55,9 +55,6 @@ class Cat extends Animal {
   Cat tom = Cat("white", "Tom");
   print(tom.test);
   tom.speak();
-
-
-
 
 
 }
