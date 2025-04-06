@@ -6,6 +6,8 @@ void main(){
     {"name":"Charlie","scores":[90,92,85]}
   ];
 
+
+
  Map<String,double>averageScores={};
 
  for(var student in students ){
@@ -20,9 +22,13 @@ void main(){
    averageScores[name]=double.parse(average.toStringAsFixed(2));
 
  }
+
+
  var sortedAverageScores=Map.fromEntries(
    averageScores.entries.toList()..sort((e1,e2) => e2.value.compareTo(e1.value))
  );
+
+
 
  print(sortedAverageScores);
 
